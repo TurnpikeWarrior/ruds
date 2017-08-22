@@ -9,7 +9,7 @@ import operator
 
 # files = ['budget_data_1.csv', 'budget_data_2']
 
-csvpath = os.path.join('Resources', 'budget_data_1.csv')
+csvpath = os.path.join('raw_data', 'budget_data_1.csv')
 
 with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
@@ -30,16 +30,14 @@ with open(csvpath, newline="") as csvfile:
     avg_revenue = float(total_revenue / count_row)
     # max_rev = max(budget_chart[Revenue])
 
-    print(total_revenue)
-    print(max_rev)
-
-    print("Financial Analysis")
+    print("\nFinancial Analysis")
     print("----------------------------")
     print("Total Months: " + str(count_row))
     print("Total Revenue: $" + str(total_revenue))
     print("Average Revenue Change: $" + str(avg_revenue))
     # print("Greatest Increase in Revenue: " + max_rev)
     # print("Greatest Decrease in Revenue: " + min_rev)
+    print("\n")
 
 
     # Specify the file to write to
@@ -50,7 +48,6 @@ with open(csvpath, newline="") as csvfile:
 
         # Write the first row (column headers)
         csvwriter.writerow(['Financial Analysis'])
-        csvwriter.writerow([''])
         csvwriter.writerow(['Total Months', str(count_row)])
         csvwriter.writerow(['Total Revenue ($)', str(total_revenue)])
         csvwriter.writerow(['Average Revenue Change ($)', str(avg_revenue)])
