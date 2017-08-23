@@ -10,7 +10,7 @@
 ### Tools
 - [Anaconda](https://www.continuum.io/downloads)
 - [GitHub](https://github.com/) 
-- Microsoft Excel / VBA
+- [Microsoft Excel](https://products.office.com/en-us/excel) / VBA
 - [Pandas](http://pandas.pydata.org/) 
 - [Python](https://www.python.org/) 
 - [Atom](https://atom.io/) / [Sublime](https://www.sublimetext.com/) / [Visual Studio Code](https://code.visualstudio.com/)
