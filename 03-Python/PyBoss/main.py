@@ -66,21 +66,23 @@ file_output = "result_PyBoss2.csv"
 
 csvpath = os.path.join('raw_data', file_input)
 
-empID = []
-Name = []
-SSN = []
-firstName = []
-lastName = []
-DOB = []
-safeSSN = []
-state = []
-
 # Reading the file
 with open(csvpath, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     # Skipping the first row aka header
     header = next(csvreader)
 
+    # Initializing the variables
+    empID = []
+    Name = []
+    SSN = []
+    firstName = []
+    lastName = []
+    DOB = []
+    safeSSN = []
+    state = []
+
+    # Iterating through CSV file
     for row in csvreader:
         empID.append(row[0])
         Name = row[1].split(' ')
