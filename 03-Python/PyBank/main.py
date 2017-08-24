@@ -8,8 +8,8 @@ import os
 import csv
 
 # Files to Input/Output
-file_input = "budget_data_2.csv"
-file_output = "result_PyBank2.csv"
+file_input = "budget_data_1.csv"
+file_output = "result_PyBank1.csv"
 
 csvpath = os.path.join('raw_data', file_input)
 
@@ -44,7 +44,7 @@ with open(csvpath, newline="") as csvfile:
             date_high = row[0]
 
         # Finding the lowest increase in revenue
-        if(revenue < greatest_increase):
+        if(revenue < greatest_decrease):
             greatest_decrease = revenue
             date_low = row[0]
     
@@ -58,7 +58,7 @@ with open(csvpath, newline="") as csvfile:
     print("Total Revenue: $" + str(total_revenue))
     print("Average Revenue Change: $" + str(avg_revenue))
     print("Greatest Increase in Revenue: " + str(date_high) + " " + str(greatest_increase))
-    print("Greatest Decrease in Revenue: " + str(date_low) + " " +str(greatest_decrease))
+    print("Greatest Decrease in Revenue: " + str(date_low) + " " + str(greatest_decrease))
 
     # Specifying the file to write to
     with open(file_output, 'w', newline='') as csvfile:
