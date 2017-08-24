@@ -62,7 +62,7 @@ state_abbrev = {
 
 # Files to Input/Output
 file_input = "employee_data1.csv"
-file_output = "result_PyBoss.csv"
+file_output = "result_PyBosszz.csv"
 
 csvpath = os.path.join('raw_data', file_input)
 
