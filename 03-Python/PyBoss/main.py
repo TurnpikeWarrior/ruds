@@ -61,10 +61,19 @@ state_abbrev = {
 }
 
 # Files to Input/Output
-file_input = "employee_data1.csv"
-file_output = "result_PyBosszz.csv"
+file_input = "employee_data2.csv"
+file_output = "result_PyBoss2.csv"
 
 csvpath = os.path.join('raw_data', file_input)
+
+empID = []
+Name = []
+SSN = []
+firstName = []
+lastName = []
+DOB = []
+safeSSN = []
+state = []
 
 # Reading the file
 with open(csvpath, newline="") as csvfile:
@@ -72,34 +81,26 @@ with open(csvpath, newline="") as csvfile:
     # Skipping the first row aka header
     header = next(csvreader)
 
-    employee_data = []
-
     for row in csvreader:
-        empID = row[0]
-        empName = row[1]
-        DOB = row[2]
-        SSN = row[3]
-        state = row[4]
+        empID.append(row[0])
+        Name = row[1].split(' ')
+        firstName.append(Name[0])
+        lastName.append(Name[1])
+        DOB.append(row[2])
+        SSN = row[3].split('-')
+        convertSSN = '***-**-'+SSN[2]
+        safeSSN.append(convertSSN)
+        state_convert = state_abbrev.get(row[4])
+        state.append(state_convert)
 
-        firstName = empName.split()[0]
-        lastName = empName.split()[1]
+employee_data = zip(empID, firstName, lastName, DOB ,safeSSN, state)
 
-        # state = state_abbrev.get(row[1].upper(), "")
+# Specifying the file to write to
+with open(file_output, 'w', newline="") as csvfile:
 
-        employee_data.append({empID, firstName, lastName, DOB, SSN, state})
-        print(empID, firstName, lastName, DOB, "***-**-" + SSN[-4:], state)
+    # Initializing csv.writer
+    csvwriter = csv.writer(csvfile, delimiter=',')
 
-    # Specifying the file to write to
-    with open(file_output, 'w', newline='') as csvfile:
-
-        # Initializing csv.writer
-        csvwriter = csv.writer(csvfile, delimiter=',')
-
-        # Writing to output file
-        csvwriter.writerow(["Emp ID", "First Name", "Last Name", "DOB", "SSN", "State"])
-        csvwriter.writerow([empID, firstName, lastName, DOB, SSN, state])
-
-
-# PROBLEM 
-# 1. unable to repeatedly write each employee data to file 
-# 2. unable to convert full state name into abbreviated state name
+    # Writing to output file
+    csvwriter.writerow(["Emp ID", "First Name", "Last Name", "DOB", "SSN", "State"])
+    csvwriter.writerows(employee_data)
