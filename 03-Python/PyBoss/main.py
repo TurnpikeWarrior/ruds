@@ -84,23 +84,22 @@ with open(csvpath, newline="") as csvfile:
         firstName = empName.split()[0]
         lastName = empName.split()[1]
 
-        if state == state_abbrev[0]
-            state = state_abbrev[1]
-            
+        # state = state_abbrev.get(row[1].upper(), "")
+
         employee_data.append({empID, firstName, lastName, DOB, SSN, state})
-        print(empID, firstName, lastName, DOB, SSN, state)
+        print(empID, firstName, lastName, DOB, "***-**-" + SSN[-4:], state)
 
-    # Printing the output 
-    # print("EMP ID, First Name, Last Name, DOB, SSN, State")
-    
-    # print(employee_data)
+    # Specifying the file to write to
+    with open(file_output, 'w', newline='') as csvfile:
 
-    # # Specifying the file to write to
-    # with open(file_output, 'w', newline='') as csvfile:
+        # Initializing csv.writer
+        csvwriter = csv.writer(csvfile, delimiter=',')
 
-    #     # Initializing csv.writer
-    #     csvwriter = csv.writer(csvfile, delimiter=',')
+        # Writing to output file
+        csvwriter.writerow(["Emp ID", "First Name", "Last Name", "DOB", "SSN", "State"])
+        csvwriter.writerow([empID, firstName, lastName, DOB, SSN, state])
 
-    #     # Writing to output file
-    #     csvwriter.writerow(["Emp ID", "First Name", "Last Name", "DOB", "SSN", "State"])
-    #     csvwriter.writerow(employee_data)
+
+# PROBLEM 
+# 1. unable to repeatedly write each employee data to file 
+# 2. unable to convert full state name into abbreviated state name
