@@ -1,4 +1,4 @@
-Student ID,name,gender,grade,school,reading_score,math_score
+Student ID,student_name,gender,grade,school_name,reading_score,math_score
 0,Paul Bradley,M,9th,Huang High School,66,79
 1,Victor Smith,M,12th,Huang High School,94,61
 2,Kevin Rodriguez,M,12th,Huang High School,90,60
