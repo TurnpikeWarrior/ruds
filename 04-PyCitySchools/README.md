@@ -829,197 +829,197 @@ school_summary
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>% Passing Math</th>
-      <th>% Passing Reading</th>
+      <th>School Type</th>
+      <th>Total Students</th>
+      <th>Total School Budget</th>
+      <th>Per Student Budget</th>
       <th>Average Math Score</th>
       <th>Average Reading Score</th>
+      <th>% Passing Math</th>
+      <th>% Passing Reading</th>
       <th>Overall Passing Rate</th>
-      <th>Per Student Budget</th>
-      <th>School Type</th>
-      <th>Total School Budget</th>
-      <th>Total Students</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Bailey High School</th>
-      <td>64.630225</td>
-      <td>79.300643</td>
+      <td>District</td>
+      <td>4976</td>
+      <td>3124928</td>
+      <td>628.0</td>
       <td>77.048432</td>
       <td>81.033963</td>
+      <td>64.630225</td>
+      <td>79.300643</td>
       <td>71.965434</td>
-      <td>628.0</td>
-      <td>District</td>
-      <td>3124928</td>
-      <td>4976</td>
     </tr>
     <tr>
       <th>Cabrera High School</th>
-      <td>89.558665</td>
-      <td>93.864370</td>
+      <td>Charter</td>
+      <td>1858</td>
+      <td>1081356</td>
+      <td>582.0</td>
       <td>83.061895</td>
       <td>83.975780</td>
+      <td>89.558665</td>
+      <td>93.864370</td>
       <td>91.711518</td>
-      <td>582.0</td>
-      <td>Charter</td>
-      <td>1081356</td>
-      <td>1858</td>
     </tr>
     <tr>
       <th>Figueroa High School</th>
-      <td>63.750424</td>
-      <td>78.433367</td>
+      <td>District</td>
+      <td>2949</td>
+      <td>1884411</td>
+      <td>639.0</td>
       <td>76.711767</td>
       <td>81.158020</td>
+      <td>63.750424</td>
+      <td>78.433367</td>
       <td>71.091896</td>
-      <td>639.0</td>
-      <td>District</td>
-      <td>1884411</td>
-      <td>2949</td>
     </tr>
     <tr>
       <th>Ford High School</th>
-      <td>65.753925</td>
-      <td>77.510040</td>
+      <td>District</td>
+      <td>2739</td>
+      <td>1763916</td>
+      <td>644.0</td>
       <td>77.102592</td>
       <td>80.746258</td>
+      <td>65.753925</td>
+      <td>77.510040</td>
       <td>71.631982</td>
-      <td>644.0</td>
-      <td>District</td>
-      <td>1763916</td>
-      <td>2739</td>
     </tr>
     <tr>
       <th>Griffin High School</th>
-      <td>89.713896</td>
-      <td>93.392371</td>
+      <td>Charter</td>
+      <td>1468</td>
+      <td>917500</td>
+      <td>625.0</td>
       <td>83.351499</td>
       <td>83.816757</td>
+      <td>89.713896</td>
+      <td>93.392371</td>
       <td>91.553134</td>
-      <td>625.0</td>
-      <td>Charter</td>
-      <td>917500</td>
-      <td>1468</td>
     </tr>
     <tr>
       <th>Hernandez High School</th>
-      <td>64.746494</td>
-      <td>78.187702</td>
+      <td>District</td>
+      <td>4635</td>
+      <td>3022020</td>
+      <td>652.0</td>
       <td>77.289752</td>
       <td>80.934412</td>
+      <td>64.746494</td>
+      <td>78.187702</td>
       <td>71.467098</td>
-      <td>652.0</td>
-      <td>District</td>
-      <td>3022020</td>
-      <td>4635</td>
     </tr>
     <tr>
       <th>Holden High School</th>
-      <td>90.632319</td>
-      <td>92.740047</td>
+      <td>Charter</td>
+      <td>427</td>
+      <td>248087</td>
+      <td>581.0</td>
       <td>83.803279</td>
       <td>83.814988</td>
+      <td>90.632319</td>
+      <td>92.740047</td>
       <td>91.686183</td>
-      <td>581.0</td>
-      <td>Charter</td>
-      <td>248087</td>
-      <td>427</td>
     </tr>
     <tr>
       <th>Huang High School</th>
-      <td>63.318478</td>
-      <td>78.813850</td>
+      <td>District</td>
+      <td>2917</td>
+      <td>1910635</td>
+      <td>655.0</td>
       <td>76.629414</td>
       <td>81.182722</td>
+      <td>63.318478</td>
+      <td>78.813850</td>
       <td>71.066164</td>
-      <td>655.0</td>
-      <td>District</td>
-      <td>1910635</td>
-      <td>2917</td>
     </tr>
     <tr>
       <th>Johnson High School</th>
-      <td>63.852132</td>
-      <td>78.281874</td>
+      <td>District</td>
+      <td>4761</td>
+      <td>3094650</td>
+      <td>650.0</td>
       <td>77.072464</td>
       <td>80.966394</td>
+      <td>63.852132</td>
+      <td>78.281874</td>
       <td>71.067003</td>
-      <td>650.0</td>
-      <td>District</td>
-      <td>3094650</td>
-      <td>4761</td>
     </tr>
     <tr>
       <th>Pena High School</th>
-      <td>91.683992</td>
-      <td>92.203742</td>
+      <td>Charter</td>
+      <td>962</td>
+      <td>585858</td>
+      <td>609.0</td>
       <td>83.839917</td>
       <td>84.044699</td>
+      <td>91.683992</td>
+      <td>92.203742</td>
       <td>91.943867</td>
-      <td>609.0</td>
-      <td>Charter</td>
-      <td>585858</td>
-      <td>962</td>
     </tr>
     <tr>
       <th>Rodriguez High School</th>
-      <td>64.066017</td>
-      <td>77.744436</td>
+      <td>District</td>
+      <td>3999</td>
+      <td>2547363</td>
+      <td>637.0</td>
       <td>76.842711</td>
       <td>80.744686</td>
+      <td>64.066017</td>
+      <td>77.744436</td>
       <td>70.905226</td>
-      <td>637.0</td>
-      <td>District</td>
-      <td>2547363</td>
-      <td>3999</td>
     </tr>
     <tr>
       <th>Shelton High School</th>
-      <td>89.892107</td>
-      <td>92.617831</td>
+      <td>Charter</td>
+      <td>1761</td>
+      <td>1056600</td>
+      <td>600.0</td>
       <td>83.359455</td>
       <td>83.725724</td>
+      <td>89.892107</td>
+      <td>92.617831</td>
       <td>91.254969</td>
-      <td>600.0</td>
-      <td>Charter</td>
-      <td>1056600</td>
-      <td>1761</td>
     </tr>
     <tr>
       <th>Thomas High School</th>
-      <td>90.214067</td>
-      <td>92.905199</td>
+      <td>Charter</td>
+      <td>1635</td>
+      <td>1043130</td>
+      <td>638.0</td>
       <td>83.418349</td>
       <td>83.848930</td>
+      <td>90.214067</td>
+      <td>92.905199</td>
       <td>91.559633</td>
-      <td>638.0</td>
-      <td>Charter</td>
-      <td>1043130</td>
-      <td>1635</td>
     </tr>
     <tr>
       <th>Wilson High School</th>
-      <td>90.932983</td>
-      <td>93.254490</td>
+      <td>Charter</td>
+      <td>2283</td>
+      <td>1319574</td>
+      <td>578.0</td>
       <td>83.274201</td>
       <td>83.989488</td>
+      <td>90.932983</td>
+      <td>93.254490</td>
       <td>92.093736</td>
-      <td>578.0</td>
-      <td>Charter</td>
-      <td>1319574</td>
-      <td>2283</td>
     </tr>
     <tr>
       <th>Wright High School</th>
-      <td>90.277778</td>
-      <td>93.444444</td>
+      <td>Charter</td>
+      <td>1800</td>
+      <td>1049400</td>
+      <td>583.0</td>
       <td>83.682222</td>
       <td>83.955000</td>
+      <td>90.277778</td>
+      <td>93.444444</td>
       <td>91.861111</td>
-      <td>583.0</td>
-      <td>Charter</td>
-      <td>1049400</td>
-      <td>1800</td>
     </tr>
   </tbody>
 </table>
@@ -1056,77 +1056,77 @@ top_performing_schools.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>% Passing Math</th>
-      <th>% Passing Reading</th>
+      <th>School Type</th>
+      <th>Total Students</th>
+      <th>Total School Budget</th>
+      <th>Per Student Budget</th>
       <th>Average Math Score</th>
       <th>Average Reading Score</th>
+      <th>% Passing Math</th>
+      <th>% Passing Reading</th>
       <th>Overall Passing Rate</th>
-      <th>Per Student Budget</th>
-      <th>School Type</th>
-      <th>Total School Budget</th>
-      <th>Total Students</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Wilson High School</th>
-      <td>90.932983</td>
-      <td>93.254490</td>
+      <td>Charter</td>
+      <td>2283</td>
+      <td>1319574</td>
+      <td>578.0</td>
       <td>83.274201</td>
       <td>83.989488</td>
+      <td>90.932983</td>
+      <td>93.254490</td>
       <td>92.093736</td>
-      <td>578.0</td>
-      <td>Charter</td>
-      <td>1319574</td>
-      <td>2283</td>
     </tr>
     <tr>
       <th>Pena High School</th>
-      <td>91.683992</td>
-      <td>92.203742</td>
+      <td>Charter</td>
+      <td>962</td>
+      <td>585858</td>
+      <td>609.0</td>
       <td>83.839917</td>
       <td>84.044699</td>
+      <td>91.683992</td>
+      <td>92.203742</td>
       <td>91.943867</td>
-      <td>609.0</td>
-      <td>Charter</td>
-      <td>585858</td>
-      <td>962</td>
     </tr>
     <tr>
       <th>Wright High School</th>
-      <td>90.277778</td>
-      <td>93.444444</td>
+      <td>Charter</td>
+      <td>1800</td>
+      <td>1049400</td>
+      <td>583.0</td>
       <td>83.682222</td>
       <td>83.955000</td>
+      <td>90.277778</td>
+      <td>93.444444</td>
       <td>91.861111</td>
-      <td>583.0</td>
-      <td>Charter</td>
-      <td>1049400</td>
-      <td>1800</td>
     </tr>
     <tr>
       <th>Cabrera High School</th>
-      <td>89.558665</td>
-      <td>93.864370</td>
+      <td>Charter</td>
+      <td>1858</td>
+      <td>1081356</td>
+      <td>582.0</td>
       <td>83.061895</td>
       <td>83.975780</td>
+      <td>89.558665</td>
+      <td>93.864370</td>
       <td>91.711518</td>
-      <td>582.0</td>
-      <td>Charter</td>
-      <td>1081356</td>
-      <td>1858</td>
     </tr>
     <tr>
       <th>Holden High School</th>
-      <td>90.632319</td>
-      <td>92.740047</td>
+      <td>Charter</td>
+      <td>427</td>
+      <td>248087</td>
+      <td>581.0</td>
       <td>83.803279</td>
       <td>83.814988</td>
+      <td>90.632319</td>
+      <td>92.740047</td>
       <td>91.686183</td>
-      <td>581.0</td>
-      <td>Charter</td>
-      <td>248087</td>
-      <td>427</td>
     </tr>
   </tbody>
 </table>
@@ -1163,77 +1163,77 @@ bottom_performing_schools.head()
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>% Passing Math</th>
-      <th>% Passing Reading</th>
+      <th>School Type</th>
+      <th>Total Students</th>
+      <th>Total School Budget</th>
+      <th>Per Student Budget</th>
       <th>Average Math Score</th>
       <th>Average Reading Score</th>
+      <th>% Passing Math</th>
+      <th>% Passing Reading</th>
       <th>Overall Passing Rate</th>
-      <th>Per Student Budget</th>
-      <th>School Type</th>
-      <th>Total School Budget</th>
-      <th>Total Students</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Rodriguez High School</th>
-      <td>64.066017</td>
-      <td>77.744436</td>
+      <td>District</td>
+      <td>3999</td>
+      <td>2547363</td>
+      <td>637.0</td>
       <td>76.842711</td>
       <td>80.744686</td>
+      <td>64.066017</td>
+      <td>77.744436</td>
       <td>70.905226</td>
-      <td>637.0</td>
-      <td>District</td>
-      <td>2547363</td>
-      <td>3999</td>
     </tr>
     <tr>
       <th>Huang High School</th>
-      <td>63.318478</td>
-      <td>78.813850</td>
+      <td>District</td>
+      <td>2917</td>
+      <td>1910635</td>
+      <td>655.0</td>
       <td>76.629414</td>
       <td>81.182722</td>
+      <td>63.318478</td>
+      <td>78.813850</td>
       <td>71.066164</td>
-      <td>655.0</td>
-      <td>District</td>
-      <td>1910635</td>
-      <td>2917</td>
     </tr>
     <tr>
       <th>Johnson High School</th>
-      <td>63.852132</td>
-      <td>78.281874</td>
+      <td>District</td>
+      <td>4761</td>
+      <td>3094650</td>
+      <td>650.0</td>
       <td>77.072464</td>
       <td>80.966394</td>
+      <td>63.852132</td>
+      <td>78.281874</td>
       <td>71.067003</td>
-      <td>650.0</td>
-      <td>District</td>
-      <td>3094650</td>
-      <td>4761</td>
     </tr>
     <tr>
       <th>Figueroa High School</th>
-      <td>63.750424</td>
-      <td>78.433367</td>
+      <td>District</td>
+      <td>2949</td>
+      <td>1884411</td>
+      <td>639.0</td>
       <td>76.711767</td>
       <td>81.158020</td>
+      <td>63.750424</td>
+      <td>78.433367</td>
       <td>71.091896</td>
-      <td>639.0</td>
-      <td>District</td>
-      <td>1884411</td>
-      <td>2949</td>
     </tr>
     <tr>
       <th>Hernandez High School</th>
-      <td>64.746494</td>
-      <td>78.187702</td>
+      <td>District</td>
+      <td>4635</td>
+      <td>3022020</td>
+      <td>652.0</td>
       <td>77.289752</td>
       <td>80.934412</td>
+      <td>64.746494</td>
+      <td>78.187702</td>
       <td>71.467098</td>
-      <td>652.0</td>
-      <td>District</td>
-      <td>3022020</td>
-      <td>4635</td>
     </tr>
   </tbody>
 </table>
@@ -1594,7 +1594,7 @@ scores_spending_math = school_summary.groupby(["Per Student Budget"]).mean()["Av
 scores_spending_reading = school_summary.groupby(["Per Student Budget"]).mean()["Average Reading Score"]
 scores_spending_passing_math = school_summary.groupby(["Per Student Budget"]).mean()["% Passing Math"]
 scores_spending_passing_reading = school_summary.groupby(["Per Student Budget"]).mean()["% Passing Reading"]
-scores_spending_overall_passing_rate = (scores_spending_passing_math / scores_spending_passing_reading) / 2
+scores_spending_overall_passing_rate = (scores_spending_passing_math + scores_spending_passing_reading) / 2
 
 scores_by_school_spending_summary = pd.DataFrame({"Average Math Score": scores_spending_math,
                                                   "Average Reading Score": scores_spending_reading,
@@ -1663,7 +1663,7 @@ scores_by_school_spending_summary
       <td>83.892196</td>
       <td>90.258770</td>
       <td>93.184236</td>
-      <td>0.484303</td>
+      <td>91.721503</td>
     </tr>
     <tr>
       <th>$600 - 700</th>
@@ -1671,7 +1671,7 @@ scores_by_school_spending_summary
       <td>81.847684</td>
       <td>72.172965</td>
       <td>82.677322</td>
-      <td>0.436474</td>
+      <td>77.425144</td>
     </tr>
   </tbody>
 </table>
@@ -1859,3 +1859,14 @@ scores_by_school_type_summary
 </div>
 
 
+
+# Conclusion
+
+1. It appears that charter schools perform better academically than district schools.  
+2. It appears that the smaller school size is, the better math/reading scores students perform.   
+3. Charter schools have smaller student populations and spend per student less than district schools and yield better academic results.  
+
+
+```python
+
+```
