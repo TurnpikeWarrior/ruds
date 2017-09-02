@@ -1415,11 +1415,6 @@ math_scores_by_grade
 
 
 ```python
-nineth_grade = complete_data[(complete_data["grade"] == "9th")]
-tenth_grade = complete_data[(complete_data["grade"] == "10th")]
-eleventh_grade = complete_data[(complete_data["grade"] == "11th")]
-twelfth_grade = complete_data[(complete_data["grade"] == "12th")]
-
 nineth_math = nineth_grade.groupby(["school_name"]).mean()["reading_score"]
 tenth_math = tenth_grade.groupby(["school_name"]).mean()["reading_score"]
 eleventh_math = eleventh_grade.groupby(["school_name"]).mean()["reading_score"]
