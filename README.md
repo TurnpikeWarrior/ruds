@@ -12,7 +12,7 @@
 - [Microsoft Excel](https://products.office.com/en-us/excel) / VBA
 - [Pandas](http://pandas.pydata.org/) 
 - [Python](https://www.python.org/) 
-- [JSON Formatter] (https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)  
+- [JSON Formatter](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)  
 - [Atom](https://atom.io/) / [Sublime](https://www.sublimetext.com/) / [Visual Studio Code](https://code.visualstudio.com/)
 
 ### Datasets
