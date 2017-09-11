@@ -22,4 +22,4 @@ lat = seattle_geo["results"][0]["geometry"]["location"]["lat"]
 lng = seattle_geo["results"][0]["geometry"]["location"]["lng"]
 
 # Print results
-print("%s: %s, %s" % (target_city, lat, lng))
+print("%s: %s, %s" % (target_city, lat, lng)) 
