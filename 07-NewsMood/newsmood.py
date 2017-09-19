@@ -1,12 +1,9 @@
-#Dependencies
+# Dependencies
 import tweepy
 import json
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-# Initialize Sentiment Analyzer
+# Import and Initialize Sentiment Analyzer
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 analyzer = SentimentIntensityAnalyzer()
 
@@ -23,7 +20,15 @@ auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
 # Target Search Term
-target_terms = ("@BBC", "@CNN", "@CNN", "@FoxNews", "@NYTimes")
+target_terms = ("@SouthwestAir", "@AmericanAir", "@SpiritAirlines",
+                "@Virginatlantic", "@Delta", "@AlaskaAir", "@KLM")
+
+# "Real Person" Filters
+min_tweets = 5
+max_tweets = 10000
+max_followers = 2500
+max_following = 2500
+lang = "en"
 
 # Array to hold sentiment
 sentiment_array = []
@@ -41,7 +46,7 @@ for target in target_terms:
     neutral_list = []
 
     # Loop through 10 times (total of 1500 tweets)
-    for x in range(1):
+    for x in range(10):
 
         # Run search around each tweet
         public_tweets = api.search(target, count=100, result_type="recent")
@@ -49,17 +54,24 @@ for target in target_terms:
         # Loop through all tweets
         for tweet in public_tweets["statuses"]:
 
-            # Run Vader Analysis on each tweet
-            compound = analyzer.polarity_scores(tweet["text"])["compound"]
-            pos = analyzer.polarity_scores(tweet["text"])["pos"]
-            neu = analyzer.polarity_scores(tweet["text"])["neu"]
-            neg = analyzer.polarity_scores(tweet["text"])["neg"]
+            # Use filters to check if user meets conditions
+            if (tweet["user"]["followers_count"] < max_followers and
+                tweet["user"]["statuses_count"] > min_tweets and
+                tweet["user"]["statuses_count"] < max_tweets and
+                tweet["user"]["friends_count"] < max_following and
+                    tweet["user"]["lang"] == lang):
 
-            # Add each value to the appropriate array
-            compound_list.append(compound)
-            positive_list.append(pos)
-            negative_list.append(neg)
-            neutral_list.append(neu)
+                # Run Vader Analysis on each tweet
+                compound = analyzer.polarity_scores(tweet["text"])["compound"]
+                pos = analyzer.polarity_scores(tweet["text"])["pos"]
+                neu = analyzer.polarity_scores(tweet["text"])["neu"]
+                neg = analyzer.polarity_scores(tweet["text"])["neg"]
+
+                # Add each value to the appropriate array
+                compound_list.append(compound)
+                positive_list.append(pos)
+                negative_list.append(neg)
+                neutral_list.append(neu)
 
     # Store the Average Sentiments
     sentiment = {"User": target,
@@ -71,3 +83,4 @@ for target in target_terms:
 
     # Print the Sentiments
     print(sentiment)
+    print("")
