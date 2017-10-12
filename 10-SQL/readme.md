@@ -13,12 +13,12 @@
 3c. `alter table actor drop middle_name`  
 
 4a. `select count(actor_id), last_name from actor group by last_name`  
-4b. `select last_name, count(*) as cnt from actor group by last_name having cnt >= 2`  
-4c.   
-```   
-UPDATE actor  
+4b. ```select last_name, count(*) as cnt 
+from actor 
+group by last_name 
+having cnt >= 2```
+4c. ```UPDATE actor  
 SET first_name = 'HARPO'  
-WHERE actor_id = 172;  
-```      
+WHERE actor_id = 172;```      
 4d. ``  
 
