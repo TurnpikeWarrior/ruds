@@ -1,6 +1,6 @@
-** 10-SQL Homework Assignment 
+## 10-SQL Homework Assignment 
 
-1a. `select * from actor`
+1a. `select * from actor`  
 1b. 
 
 2a. `select actor_id, first_name, last_name from actor where first_name like "%Joe%"`
