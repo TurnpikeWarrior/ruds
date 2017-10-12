@@ -1,1 +1,1 @@
-1. 'select * from actor'
+1. `select * from actor`
