@@ -36,3 +36,10 @@ where actor_id = 172;
 5a. `show tables;`  
 
 6a. 
+```
+select staff.first_name, staff.last_name, address.address 
+from staff 
+inner join address on staff.address_id = address.address_id;
+```
+
+6b. 
