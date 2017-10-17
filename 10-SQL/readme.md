@@ -43,15 +43,15 @@ from staff
 inner join address on staff.address_id = address.address_id;
 ```
 
-6b. 
+6b.  
 
 6c. 
 
-6d. `select count(film_id) from inventory where film_id = 439;`
+6d. `select count(film_id) from inventory where film_id = 439;`  
 
 6e.
 
-7a.
+7a. `select title from film where (title like "K%" OR title like "Q%") AND language_id = 1;`  
 
 7b. 
 ```
