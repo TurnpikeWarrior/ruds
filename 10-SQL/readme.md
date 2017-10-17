@@ -1,7 +1,7 @@
 ## 10-SQL Homework Assignment 
 
 1a. `select * from actor`  
-1b. ``
+1b. `select concat(first_name, ' ', last_name) as 'Actor Name' from actor;`
 
 2a. `select actor_id, first_name, last_name from actor where first_name like "%Joe%"`  
 2b. `select last_name, first_name from actor where last_name like "%GEN%"`  
@@ -13,6 +13,7 @@
 3c. `alter table actor drop middle_name`  
 
 4a. `select count(actor_id), last_name from actor group by last_name`  
+
 4b. 
 ```  
 select last_name, count(*) as cnt  
@@ -43,3 +44,46 @@ inner join address on staff.address_id = address.address_id;
 ```
 
 6b. 
+
+6c. 
+
+6d. `select count(film_id) from inventory where film_id = 439;`
+
+6e.
+
+7a.
+
+7b. 
+```
+select first_name, last_name 
+from actor 
+where actor_id in 
+(
+	select actor_id 
+	from film_actor 
+	where film_id in
+	(
+		select film_id 
+		from film 
+		where title = 'Alone Trip'
+	)
+);
+```
+
+7c. 
+
+7d.
+
+7e.
+
+7f.
+
+7g.
+
+7h.
+
+8a. 
+
+8b. 
+
+8c. 
