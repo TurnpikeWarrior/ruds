@@ -5,6 +5,10 @@
 - [Python Programming - Your Step by Step Guide to Easily Learn Python in 7 Days](https://www.amazon.com/dp/B01N1ZXVPL?m=ATVPDKIKX0DER)
 - [A Whirlwind Tour of Python](https://jakevdp.github.io/WhirlwindTourOfPython/) 
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/#toc)
+- [Gunicorn] (http://gunicorn.org/)
+- [SQLBolt] (https://sqlbolt.com/)
+- [Flask] (http://flask.pocoo.org/)
+- [SQLAlchemy] (https://www.sqlalchemy.org/)
 
 ### Tools
 - [Anaconda](https://www.continuum.io/downloads)
