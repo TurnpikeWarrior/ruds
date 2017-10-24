@@ -10,6 +10,7 @@
 - [Flask](http://flask.pocoo.org/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 
+
 ### Tools
 - [Anaconda](https://www.continuum.io/downloads)
 - [GitHub](https://github.com/) 
@@ -21,3 +22,6 @@
 
 ### Datasets
 - [Kaggle](https://www.kaggle.com/)
+
+### Cool Links 
+- [Streaming Dataframes](http://matthewrocklin.com/blog/work/2017/10/16/streaming-dataframes-1)
