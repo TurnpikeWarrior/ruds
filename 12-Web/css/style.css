@@ -1,0 +1,18 @@
+.vBox {
+    margin-left: 25px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+}
+
+.container .text-muted {
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
