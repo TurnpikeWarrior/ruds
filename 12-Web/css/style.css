@@ -1,5 +1,22 @@
+.mBox {
+    margin-left: 25px;
+    padding-bottom: 25px;
+    background-color: #eee;
+}
+
+.mBox img {
+    margin-bottom: 25px;
+}
+
 .vBox {
     margin-left: 25px;
+    background-color: #eee;
+    padding-bottom: 25px;
+}
+
+.vBox img {
+    width: 200px;
+    margin: 5px;
 }
 
 .footer {
@@ -15,4 +32,3 @@
     font-weight: bold;
     color: white;
 }
-
