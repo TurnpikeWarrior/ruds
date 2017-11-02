@@ -19,6 +19,10 @@
 - [Flask](http://flask.pocoo.org/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 - [Atom](https://atom.io/) / [Sublime](https://www.sublimetext.com/) / [Visual Studio Code](https://code.visualstudio.com/)
+- [Splinter](https://splinter.readthedocs.io/en/latest/index.html) 
+- [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
+- [Selenium](http://www.seleniumhq.org/)
+- [PyMongo](https://api.mongodb.com/python/current/)
 
 ### Datasets
 - [Kaggle](https://www.kaggle.com/)
