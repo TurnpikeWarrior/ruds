@@ -1,0 +1,8 @@
+.banner {
+    background-image: url("images/strangerthings.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 100%;
+}
