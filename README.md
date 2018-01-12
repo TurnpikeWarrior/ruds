@@ -21,8 +21,12 @@
 - [Atom](https://atom.io/) / [Sublime](https://www.sublimetext.com/) / [Visual Studio Code](https://code.visualstudio.com/)
 - [Splinter](https://splinter.readthedocs.io/en/latest/index.html) 
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
-- [Selenium](http://www.seleniumhq.org/)
-- [PyMongo](https://api.mongodb.com/python/current/)
+- [Selenium](http://www.seleniumhq.org/)  
+- [PyMongo](https://api.mongodb.com/python/current/)  
+- [GraphViz] (https://graphviz.gitlab.io/)  
+- [scikit-learn] (http://scikit-learn.org/stable/index.html)  
+- [SciPy] (https://www.scipy.org/)  
+
 
 ### Datasets
 - [Kaggle](https://www.kaggle.com/)
