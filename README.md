@@ -23,14 +23,14 @@
 - [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/)
 - [Selenium](http://www.seleniumhq.org/)  
 - [PyMongo](https://api.mongodb.com/python/current/)  
-- [GraphViz] (https://graphviz.gitlab.io/)  
-- [scikit-learn] (http://scikit-learn.org/stable/index.html)  
-- [SciPy] (https://www.scipy.org/)  
+- [GraphViz](https://graphviz.gitlab.io/)  
+- [scikit-learn](http://scikit-learn.org/stable/index.html)  
+- [SciPy](https://www.scipy.org/)  
 
 
 ### Datasets
 - [Kaggle](https://www.kaggle.com/)
-- [Data Beta NYC] (http://data.beta.nyc/)
+- [Data Beta NYC](http://data.beta.nyc/)
 
 ### Cool Links 
 - [Streaming Dataframes](http://matthewrocklin.com/blog/work/2017/10/16/streaming-dataframes-1)
