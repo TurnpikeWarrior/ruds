@@ -26,6 +26,8 @@
 - [GraphViz](https://graphviz.gitlab.io/)  
 - [scikit-learn](http://scikit-learn.org/stable/index.html)  
 - [SciPy](https://www.scipy.org/)  
+- [R Studio](https://www.rstudio.com/)
+- [R](https://cran.rstudio.com/)
 
 
 ### Datasets
