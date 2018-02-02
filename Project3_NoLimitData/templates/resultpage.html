@@ -1,0 +1,189 @@
+{% extends 'main.html' %}
+
+{% block title %}Restaurants {% endblock %}
+
+{% block content %}
+  <div class="container" id="main-section">
+    <form name="resform" action="/resultpage" method="POST" onsubmit="return validateResForm()">
+      <input type="hidden" id="totalresults" name=""totalresults" value="{{ totalresults }}">
+      <input type="hidden" id="zipcode" name="zipcode" value="{{ zipcode }}">
+      <h1>Please evaluate each restaurant</h1>
+      <hr>            
+      <button class="btn btn-primary btn-md btn-homepage pull-right" id="surpriseme" type="submit"><span class="fa fa-cutlery" aria-hidden="true"></span> Surprise Me!</button>
+      <p id="error"></p>   
+      <h3>Group 1</h3>
+      {% if restaurant_results1 %}
+        <div class="row">
+          {% for restaurant in restaurant_results1 %}
+            <div class="col-xs-12 col-md-6">
+              <div class="list-group" id="restaurant-list">
+                <a href="#" class="list-group-item">                
+                  <div class="media">                                     
+                    <div class="media-left">
+                      {% if restaurant.image_url %}
+                        <img class="media-object" src="{{ restaurant.image_url }}" alt="Image for {{ restaurant.name }}">
+                      {% else %}
+                        <img class="media-object" src="http://placehold.it/100x100?text=No+Image+Available" alt="Image for {{ restaurant.name }}">
+                      {% endif %}
+                    </div><!-- /.media-left --> 
+                    <div class="media-body">
+                      <h3 class="media-heading">{{ restaurant.name }}</h3>
+                      <p>
+                        {{ restaurant.cuisine }}<br>
+                        {{ restaurant.price }} 
+                        {% if restaurant.reservations %} 
+                          <span>| Reservations</span>
+                        {% endif %}
+                        {% if restaurant.delivery %}
+                          <span>| Delivery</span>
+                        {% endif %}<br>
+                        <p>{{ restaurant.rating }}</p>
+                      </p>                                        
+                      <div class="text-center selection">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group1_{{ restaurant.yelpid }}" id="group1_{{ restaurant.yelpid }}" value="1"><span class="glyphicon glyphicon-thumbs-up"></span> Like
+                          </label>
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group1_{{ restaurant.yelpid }}" id="group1_{{ restaurant.yelpid }}" value="0"><span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- /.media-body -->  
+                  </div><!-- /.media -->            
+                </a>
+              </div><!-- /.list-group -->
+            </div><!-- /.col -->
+          {% endfor %}
+        </div><!-- /.row -->
+      {% else %}
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <p>No results found. Please try again.</p>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      {% endif %}
+
+      <hr>
+      <!-- Group 2 -->
+      <h3>Group 2</h3>
+      {% if restaurant_results2 %}
+        <div class="row">
+          {% for restaurant in restaurant_results2 %}
+            <div class="col-xs-12 col-md-6">
+              <div class="list-group" id="restaurant-list">
+                <a href="#" class="list-group-item">                
+                  <div class="media">
+                    <div class="pull-left selection">
+                    </div>                  
+                    <div class="media-left">
+                      {% if restaurant.image_url %}
+                        <img class="media-object" src="{{ restaurant.image_url }}" alt="Image for {{ restaurant.name }}">
+                      {% else %}
+                        <img class="media-object" src="http://placehold.it/100x100?text=No+Image+Available" alt="Image for {{ restaurant.name }}">
+                      {% endif %}
+                    </div><!-- /.media-left --> 
+                    <div class="media-body">
+                      <h3 class="media-heading">{{ restaurant.name }}</h3>
+                      <p>
+                        {{ restaurant.cuisine }}<br>
+                        {{ restaurant.price }} 
+                        {% if restaurant.reservations %} 
+                          <span>| Reservations</span>
+                        {% endif %}
+                        {% if restaurant.delivery %}
+                          <span>| Delivery</span>
+                        {% endif %}<br>
+                        <p>{{ restaurant.rating }}</p>
+                      </p>                      
+                      <div class="text-center selection">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group2_{{ restaurant.yelpid }}" id="group2_{{ restaurant.yelpid }}" value="1"><span class="glyphicon glyphicon-thumbs-up"></span> Like
+                          </label>
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group2_{{ restaurant.yelpid }}" id="group2_{{ restaurant.yelpid }}" value="0"><span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- /.media-body -->  
+                  </div><!-- /.media -->            
+                </a>
+              </div><!-- /.list-group -->
+            </div><!-- /.col -->
+          {% endfor %}
+        </div><!-- /.row -->
+      {% else %}
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <p>No results found. Please try again.</p>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      {% endif %}
+
+      <hr>
+      <!-- Group 3 -->
+      <h3>Group 3</h3>
+      {% if restaurant_results3 %}
+        <div class="row">
+          {% for restaurant in restaurant_results3 %}
+            <div class="col-xs-12 col-md-6">
+              <div class="list-group" id="restaurant-list">
+                <a href="#" class="list-group-item">                
+                  <div class="media">     
+                    <div class="media-left">
+                      {% if restaurant.image_url %}
+                        <img class="media-object" src="{{ restaurant.image_url }}" alt="Image for {{ restaurant.name }}">
+                      {% else %}
+                        <img class="media-object" src="http://placehold.it/100x100?text=No+Image+Available" alt="Image for {{ restaurant.name }}">
+                      {% endif %}
+                    </div><!-- /.media-left --> 
+                    <div class="media-body">
+                      <h3 class="media-heading">{{ restaurant.name }}</h3>
+                      <p>
+                        {{ restaurant.cuisine }}<br>
+                        {{ restaurant.price }} 
+                        {% if restaurant.reservations %} 
+                          <span>| Reservations</span>
+                        {% endif %}
+                        {% if restaurant.delivery %}
+                          <span>| Delivery</span>
+                        {% endif %}<br>
+                        <p>{{ restaurant.rating }}</p>
+                      </p>
+                      <div class="text-center selection">
+                        <div class="btn-group" data-toggle="buttons">
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group3_{{ restaurant.yelpid }}" id="group3_{{ restaurant.yelpid }}" value="1"><span class="glyphicon glyphicon-thumbs-up"></span> Like
+                          </label>
+                          <label class="btn btn-default like">
+                            <input type="radio" name="group3_{{ restaurant.yelpid }}" id="group3_{{ restaurant.yelpid }}" value="0"><span class="glyphicon glyphicon-thumbs-down"></span> Dislike
+                          </label>
+                        </div>
+                      </div>
+                    </div><!-- /.media-body -->  
+                  </div><!-- /.media -->            
+                </a>
+              </div><!-- /.list-group -->
+            </div><!-- /.col -->
+          {% endfor %}
+        </div><!-- /.row -->
+
+      {% else %}
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <p>No results found. Please try again.</p>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      {% endif %}
+
+      <button class="btn btn-primary btn-md btn-homepage pull-right" id="surpriseme" type="submit"><span class="fa fa-cutlery" aria-hidden="true"></span> Surprise Me!</button>
+    </form>
+  </div><!-- /.container -->
+
+{% endblock %}
+
+{% block javascript %}
+  <script type='text/javascript' src='../static/js/resultpage.js'></script> 
+  
+{% endblock %}
